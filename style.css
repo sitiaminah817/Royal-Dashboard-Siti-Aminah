@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    color: rgb(165, 164, 164);
+    line-height: 1.6;
+}
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 1285px;
+   margin-top: 30px;
+   margin-left: 30px;
+}
+
+header h1 {
+   font-size: 35px;
+   color: #2d2d8d;
+}
+
+input {
+   padding: 0.3rem 1rem;
+   text-align: center;
+}
+
+.container {
+   display: grid;
+   grid-template-areas: "nav nav main main main main main"
+   "nav nav aside aside section1 section1 section2"
+   "nav nav footer footer footer footer footer";
+}
+
+nav {
+   background-color: #1d1daf;
+   grid-area: nav;
+   width: 285px;
+   height: auto;
+   padding: 50px 0px;
+   margin-left: 30px;
+}
+
+nav a {
+   display: block;
+   padding: 30px 80px;
+   color: #ecebeb;
+   font-size: 20px;
+   text-decoration: none;
+}
+
+nav a:hover {
+   background-color:#101091;
+
+}
+
+nav .keluar {
+   color: #aa5213;
+}
+
+main {
+   background-color:#3434d8;
+   grid-area: main;
+   width: 985px;
+   height: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: 1rem;
+   padding: 1rem;
+}
+
+.title  {
+   margin-left: 10px;
+   color:#ecebeb;
+}
+
+.title p {
+   margin-top: 9px;
+   color: #ceced4;
+   height: auto;
+   text-align: left;
+   
+}
+
+.profil img{
+   width: 140px;
+   height: 150px;
+   margin: 1rem;
+   border-radius: 50%;
+}
+
+aside {
+  background-color: #ecebeb;
+  grid-area: aside;
+  width: 520px;
+  margin-left: 1rem;
+  margin-top: 10px;
+}
+
+aside h3 {
+  margin-top: 10px;
+  margin-left: 8px;
+  color: #413939;
+}
+
+aside img {
+  width: 450px;
+  height: 300px;
+  margin-top: 10px;
+  margin-left: 8px;
+  border-radius: 5px;
+}
+
+.section1 {
+  grid-area: section1;
+  margin-top: 10px;
+  background-color: #ecebeb;
+  width: 200px;
+}
+
+.matkul, .aktifitas {
+  background-color: #eff1f3;
+}
+
+.section1 h3, .matkul, .section2 h3, .aktifitas {
+  margin: 10px;
+  color: #413939;
+}
+
+.matkul p, .aktifitas p {
+  margin-top: 5px;
+  color: #105fbe;
+}
+
+.section2 {
+  grid-area: section2;
+  margin-top: 10px;
+  background-color: #ecebeb;
+  width: 250px;
+  margin-right: 1.5rem;
+}
+
+footer {
+  background-color: #ecebeb;
+  grid-area: footer;
+  margin-top: 10px;
+  margin-left: 1rem;
+  width: 984px;
+}
+
+footer h3, .dokumen {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #413939;
+  padding: 1rem;
+  background-color: #f3eeee;
+}
+
+
+footer p span {
+  color: #373838;
+  font-weight: bold;
+}
